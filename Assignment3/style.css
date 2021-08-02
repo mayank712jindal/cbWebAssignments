@@ -1,0 +1,26 @@
+body {
+  background: black;
+}
+button {
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  padding: 25px 45px;
+  background: transparent;
+  color: #fec5bb;
+  border: 3.5px solid #fec5bb;
+  font-size: 1.2rem;
+  outline: none;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: 1s;
+}
+button:hover {
+  border-color: #c0fdff;
+  color: white;
+  box-shadow: 0px 8px 8px #c0fdff;
+  transition: all 1s;
+  font-size: 1.3rem;
+  transform: scale(1.1);
+}
