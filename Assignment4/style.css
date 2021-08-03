@@ -9,7 +9,7 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
-  background: rgba(169, 146, 125, 0.2);
+  background: rgba(73, 17, 28, 0.5);
   z-index: 900;
 }
 nav {
@@ -19,7 +19,7 @@ nav {
   align-items: center;
   padding: 0px 30px;
   color: #fefefe;
-  text-shadow: 5px 5px 10px #49111c;
+  text-shadow: 5px 5px 10px #a9927d;
 }
 nav ul {
   display: flex;
@@ -170,18 +170,98 @@ main figure img {
 }
 
 /*-------------------------------------------CONTACT----------------------------------------------------------------*/
+.contactDiv {
+  background-color: #a9927d;
+  color: #49111c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 30px;
+  border-radius: 40px;
+}
+.contactDiv img {
+  max-width: 400px;
+  min-width: 250px;
+  padding: 10px;
+}
+.contactDiv .form {
+  padding: 20px;
+}
+.form form {
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 40vw;
+}
+.form input,
+textarea {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  margin: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #49111c;
+}
+.form input[type="button"] {
+  min-width: 70% !important;
+}
 
 /*---------------------------------------------FOOTER---------------------------------------------------------------*/
+#footer {
+  background: rgba(73, 17, 28, 0.8);
+  padding: 30px 10px 10px 10px;
+}
+.socialLinks ion-icon {
+  font-size: 2.5rem;
+  color: #f2f4f3;
+  padding: 5px;
+}
+.socialLinks {
+  text-align: center;
+}
+.socialLinks ion-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #a9927d;
+}
+#footer p {
+  margin: 0;
+  margin-top: 15px;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 10px #a9927d;
+}
 
 /*---------------------------MEDIA QUERIES------------------------------------------------*/
 @media screen and (max-width: 768px) {
   nav ul {
     display: none;
   }
+  .contactDiv {
+    padding: 30px 10px;
+  }
+  .contactDiv .form {
+    padding: 0px;
+  }
+  .form form {
+    max-width: 80vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactDiv img {
+    max-width: 320px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .logo {
     font-size: 3rem;
+  }
+  .contactDiv img {
+    max-width: 260px;
   }
 }
