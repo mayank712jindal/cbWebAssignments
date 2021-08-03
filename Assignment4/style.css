@@ -78,15 +78,13 @@ main figure img {
   filter: brightness(0.7);
 }
 
-.logo {
+.logo img {
   position: absolute;
   /* z-index: 1000; */
-  top: calc(40vh - 10px);
-  left: calc(40vw - 2vw);
-  color: white;
-  font-size: 4.2rem;
-  font-weight: 700;
-  text-shadow: 5px 5px 20px #49111c;
+  top: calc(45vh - 10px);
+  left: calc(42vw - 2vw);
+  filter: brightness(1.5);
+  height: 15vh;
 }
 
 @keyframes slider {
@@ -261,8 +259,8 @@ textarea {
 }
 
 @media screen and (max-width: 400px) {
-  .logo {
-    font-size: 3rem;
+  .logo img {
+    left: calc(15vw - 2vw);
   }
   .contactDiv img {
     max-width: 260px;
