@@ -258,7 +258,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .logo img {
     left: calc(15vw - 2vw);
   }
