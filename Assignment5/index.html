@@ -10,44 +10,192 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#home">Portfolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link " href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#languages">Skills</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            
           </div>
         </div>
       </nav>
+
+      <!-- introduction --> 
+      <div class="container row m-auto my-4 p-md-4 p-3 bg-white" id="home">
+        <div class="col-lg-5 p-3 d-flex justify-content-center">
+          <img src="./profile.jpg" alt="">
+        </div>
+        <div class="col-lg-5 p-3 d-flex justify-content-center flex-column">
+            <h1 class="display-1">Hello.</h1>
+            <h3 class="display-6">I am MAYANK JINDAL</h3>
+            <h5 class="display-6 fs-4">I'm <span>Junior</span> & a passianate <span>Web Developer</span>.</h5>
+        </div>
+      </div>
+
+      <!-- About Me -->
+      <div class="container row m-auto my-4 p-md-4 p-3 bg-white" id="about">
+        <div class="col-12 p-3">
+          <h1 class="display-6">About Me</h1>
+        </div>
+        <div class="col-12 p-3 lead">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus commodi ullam quidem saepe ipsum quasi voluptate, dignissimos vitae, voluptatum et rerum sequi? Suscipit omnis nesciunt magni enim dolor maiores nam!
+            Natus maiores quae fuga ratione nihil perspiciatis autem omnis dicta aspernatur, eius eaque voluptatibus magnam placeat officia fugit minus unde vitae molestiae doloremque inventore. Neque enim quos officia eaque ipsam!</p>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="container row m-auto my-4 p-md-4 p-3 bg-white" id="education">
+        <div class="col-12 p-3">
+          <h1 class="display-6">Education</h1>
+        </div>
+        <div class="col-lg-5 p-3">
+          <h4 class="lead fs-3">Schooling</h4>
+          <article>
+            <p class="lead " >10th (CBSE Board)</p>
+            <p class="lead fs-5">~ Gobindgarh Public School</p>
+            <p class="lead fs-5">~ 2016-17</p>
+          </article>
+          <article>
+            <p class="lead " >12th (CBSE Board)</p>
+            <p class="lead fs-5">~ DC Montessori Public School</p>
+            <p class="lead fs-5">~ 2018-19</p>
+          </article>
+        </div>
+        <div class="col-lg-5 p-3">
+          <h4 class="lead fs-3">Bachelor's</h4>
+          <article>
+            <p class="lead " >Bachelor's of Engineering, CSE</p>
+            <p class="lead fs-5">~ Chitkara University</p>
+            <p class="lead fs-5">~ 2019-23</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="container row m-auto my-4 p-md-4 p-3 bg-white" id="projects">
+        <div class="col-12 p-3">
+          <h1 class="display-6">Projects</h1>
+        </div>
+        <div class="col-12 p-3 d-flex justify-content-center align-items-center flex-wrap gap-4">
+          
+          <article>
+            <div class="mainContent">
+              <img src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+            </div>
+            <div class="overlayContent">
+              <h3>Title</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit fugiat accusamus amet, nemo molestiae nobis quo deserunt eveniet facere ipsam. Vitae, fugiat velit maxime repellendus tempora quis sequi labore.5</p>
+              <button class="btn btn-outline-dark">Check</button>
+            </div>
+          </article>
+          <article>
+            <div class="mainContent">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+            </div>
+            <div class="overlayContent">
+              <h3>Title</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit fugiat accusamus amet, nemo molestiae nobis quo deserunt eveniet facere ipsam. Vitae, fugiat velit maxime repellendus tempora quis sequi labore.5</p>
+              <button class="btn btn-outline-dark">Check</button>
+            </div>
+          </article>
+          <article>
+            <div class="mainContent">
+              <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=995&q=80" alt="">
+            </div>
+            <div class="overlayContent">
+              <h3>Title</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit fugiat accusamus amet, nemo molestiae nobis quo deserunt eveniet facere ipsam. Vitae, fugiat velit maxime repellendus tempora quis sequi labore.5</p>
+              <button class="btn btn-outline-dark">Check</button>
+            </div>
+          </article>
+          <article>
+            <div class="mainContent">
+              <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1066&q=80" alt="">
+            </div>
+            <div class="overlayContent">
+              <h3>Title</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit fugiat accusamus amet, nemo molestiae nobis quo deserunt eveniet facere ipsam. Vitae, fugiat velit maxime repellendus tempora quis sequi labore.5</p>
+              <button class="btn btn-outline-dark">Check</button>
+            </div>
+          </article>
+          <article>
+            <div class="mainContent">
+              <img src="https://images.unsplash.com/3/doctype-hi-res.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1046&q=80" alt="">
+            </div>
+            <div class="overlayContent">
+              <h3>Title</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit fugiat accusamus amet, nemo molestiae nobis quo deserunt eveniet facere ipsam. Vitae, fugiat velit maxime repellendus tempora quis sequi labore.5</p>
+              <button class="btn btn-outline-dark">Check</button>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+
+      <!-- languages -->
+      <div class="container row m-auto my-4 p-md-4 p-3 bg-white" id="languages">
+        <div class="col-12 p-3">
+          <h1 class="display-6">Skills</h1>
+        </div>
+        <div class="col-12 p-3 d-flex align-items-center flex-wrap gap-2">
+            <p class="py-2 px-3 rounded-3 lead">HTML</p>
+            <p class="py-2 px-3 rounded-3 lead">CSS</p>
+            <p class="py-2 px-3 rounded-3 lead">Javascript</p>
+            <p class="py-2 px-3 rounded-3 lead">Bootstrap</p>
+            <p class="py-2 px-3 rounded-3 lead">Tailwind CSS</p>
+            <p class="py-2 px-3 rounded-3 lead">Sass</p>
+            <p class="py-2 px-3 rounded-3 lead">jQuery</p>
+            <p class="py-2 px-3 rounded-3 lead">JAVA</p>
+            <p class="py-2 px-3 rounded-3 lead">C</p>
+            <p class="py-2 px-3 rounded-3 lead">C++</p>
+            <p class="py-2 px-3 rounded-3 lead">Python</p>
+            <p class="py-2 px-3 rounded-3 lead">PHP</p>
+            <p class="py-2 px-3 rounded-3 lead">mySQL</p>
+            <p class="py-2 px-3 rounded-3 lead">ReactJS</p>
+            <p class="py-2 px-3 rounded-3 lead">NodeJS</p>
+            <p class="py-2 px-3 rounded-3 lead">MongoDB</p>
+            <p class="py-2 px-3 rounded-3 lead">Firebase</p>
+            <p class="py-2 px-3 rounded-3 lead">Git</p>
+            <p class="py-2 px-3 rounded-3 lead">GitHub</p>
+            <p class="py-2 px-3 rounded-3 lead">Project Management</p>
+            <p class="py-2 px-3 rounded-3 lead">Problem Solving</p>
+            <p class="py-2 px-3 rounded-3 lead">Leadership</p>
+        </div>
+      </div>
+      
+      <!-- footer -->
+      <footer class="container-fluid py-3 px-4 d-flex flex-wrap justify-content-between align-content-center">
+        <div class="m-2">
+          <p class="m-0 lead ">Made with <i class="fas fa-heart"></i> by Mayank Jindal</p>
+        </div>
+        <div class="m-2">
+          <a href="https://www.instagram.com/mayank712jindal" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://www.github.com/mayank712jindal" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/mayank712jindal" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cd8d3e5dc8.js" crossorigin="anonymous"></script>
 </body>
 </html>
