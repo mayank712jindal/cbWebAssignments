@@ -1,7 +1,52 @@
-.ok {
-  display: none;
+body {
+  background-color: #cbc0d3;
+  height: 80vh;
+}
+nav,
+footer {
+  background-color: #8e9aaf;
+}
+/* input field */
+input {
+  width: 80%;
+}
+
+/* list */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 100px;
 }
 li {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 8px 5px;
+  font-size: 1.2rem;
+  /* flex-wrap: wrap; */
+  margin-bottom: 3px;
+}
+span.text {
+  width: calc(100% - 100px);
+  word-wrap: break-word;
+}
+
+span.icons {
+  min-width: 98px !important;
+}
+.icons img {
+  cursor: pointer;
+}
+.ok {
+  display: none;
+}
+li:nth-child(2n) {
+  background-color: #feeafa;
+}
+li:nth-child(2n + 1) {
+  background-color: #ffd9f7;
+}
+footer i {
+  color: #f2f2f2;
+  margin: 0px 5px;
 }

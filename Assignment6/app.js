@@ -21,7 +21,7 @@ function addListItem(text) {
         newListELement.className = "listElement"
 
         let spanTag = document.createElement('span');
-
+        spanTag.className = "icons"
         // check icon
         let okImg = document.createElement('img');
         okImg.src = "https://img.icons8.com/material-outlined/24/000000/checkmark--v1.png";
@@ -56,6 +56,8 @@ function addListItem(text) {
         newListELement.appendChild(textSpan);
         newListELement.appendChild(spanTag);
         list.appendChild(newListELement);
+
+        inputText.value = "";
     }
 }
 
@@ -90,7 +92,6 @@ list.addEventListener("click", function (e) {
         let li = e.target;
         let p1 = li.parentNode;
         let p2 = p1.parentNode;
-        console.log(p2.previousSibling);
         if (p2.previousElementSibling === null)
             alert("First Element");
         else {
