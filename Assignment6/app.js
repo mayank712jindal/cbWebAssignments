@@ -27,7 +27,6 @@ function addListItem(text) {
         okImg.src = "https://img.icons8.com/material-outlined/24/000000/checkmark--v1.png";
         okImg.className = "ok";
         spanTag.appendChild(okImg);
-
         // update icon
         let updateImg = document.createElement('img');
         updateImg.src = "https://img.icons8.com/material-outlined/24/000000/edit--v1.png";
@@ -49,8 +48,12 @@ function addListItem(text) {
         deleteImg.className = "delete";
         spanTag.appendChild(deleteImg);
 
+        //text value
+        let textSpan = document.createElement('span');
+        textSpan.appendChild(document.createTextNode(text));
+        textSpan.className = "text";
         // appending elements
-        newListELement.appendChild(document.createTextNode(text));
+        newListELement.appendChild(textSpan);
         newListELement.appendChild(spanTag);
         list.appendChild(newListELement);
     }
@@ -58,7 +61,6 @@ function addListItem(text) {
 
 //remove particular list item
 list.addEventListener("click", function (e) {
-    console.log(e.target)
     if (e.target.className == 'delete') {
         let li = e.target;
         let p1 = li.parentNode;
@@ -68,28 +70,45 @@ list.addEventListener("click", function (e) {
     if (e.target.className == 'ok') {
 
         let li = e.target;
-        let p2 = p1.parentNode.parentNode;
+        let p1 = li.parentNode;
+        let p2 = p1.parentNode;
         li.style.display = "none";
-
-        p2.setAttribute("contenteditable", "false");
+        p2.querySelector('.update').style.display = "inline-block";
+        p2.firstChild.setAttribute("contenteditable", "false");
     }
     if (e.target.className == 'update') {
         let li = e.target;
         let p1 = li.parentNode;
         let p2 = p1.parentNode;
-        p2.setAttribute("contenteditable", "true");
+        p2.firstChild.setAttribute("contenteditable", "true");
+        li.style.display = "none";
+        p2.querySelector('.ok').style.display = "inline-block";
+
         // p2.remove();
     }
     if (e.target.className == 'up') {
         let li = e.target;
         let p1 = li.parentNode;
         let p2 = p1.parentNode;
-        // p2.remove();
+        console.log(p2.previousSibling);
+        if (p2.previousElementSibling === null)
+            alert("First Element");
+        else {
+            let temp = p2.previousSibling.firstChild.innerText;
+            p2.previousSibling.firstChild.innerText = p2.firstChild.innerText;
+            p2.firstChild.innerText = temp;
+        }
     }
     if (e.target.className == 'down') {
         let li = e.target;
         let p1 = li.parentNode;
         let p2 = p1.parentNode;
-        // p2.remove();
+        if (p2.nextElementSibling === null)
+            alert("Last Element");
+        else {
+            let temp = p2.nextSibling.firstChild.innerText;
+            p2.nextSibling.firstChild.innerText = p2.firstChild.innerText;
+            p2.firstChild.innerText = temp;
+        }
     }
 });

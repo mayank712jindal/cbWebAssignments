@@ -1,3 +1,7 @@
 .ok {
   display: none;
 }
+li {
+  display: flex;
+  justify-content: space-between;
+}
