@@ -8,4 +8,5 @@
 <li>Assignment 3 - <span>https://affectionate-hamilton-415fa4.netlify.app/</span></li>
 <li>Assignment 4 - <span>https://desiaddicts.netlify.app/</span></li>
 <li>Assignment 5 - <span>https://portfolio-developer.netlify.app/</span></li>
+<li>Assignment 6 - <span>https://todo-check.netlify.app/</span></li>
 </ul>
