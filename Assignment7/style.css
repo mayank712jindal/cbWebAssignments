@@ -11,7 +11,7 @@ body {
 }
 
 main {
-  height: 400px;
+  height: 450px;
   width: 300px;
   border-radius: 25px;
   background-color: rgba(240, 248, 255, 0.6);
@@ -49,8 +49,9 @@ input {
 }
 
 #details p {
+  color: #023e8a;
   font-weight: bold;
-  color: darkblue;
+  font-size: 1.2rem;
 }
 
 #description {
@@ -58,6 +59,11 @@ input {
 }
 
 #temperature {
-  font-size: 2rem;
-  text-shadow: 4px 4px 3px lightblue;
+  font-size: 2.5rem !important;
+  text-shadow: 4px 4px 3px lightcyan;
+  font-weight: bolder;
+}
+#minMax,
+#wind {
+  font-weight: 500 !important;
 }
