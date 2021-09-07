@@ -5,6 +5,10 @@ let minMax = document.getElementById("minMax");
 let wind = document.getElementById("wind");
 let description = document.getElementById("description");
 
+// init function
+function init() {
+    getWeatherDetails("kolkata");
+}
 
 $("#location").on("keypress", function (event) {
     if (event.which === 13) {
@@ -23,7 +27,6 @@ function getWeatherDetails(input) {
             return result.json()
         })
         .then((data) => {
-            console.log(data)
             let text = data.name;
             name.innerHTML = text;
 
@@ -66,3 +69,5 @@ function background(input) {
     else if (input === "Mist" || input === "Haze")
         $("body").css("background-image", "url('https://images.unsplash.com/36/STzPBJUsSza3mzUxiplj_DSC09775.JPG?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1042&q=80')");
 }
+
+init();
