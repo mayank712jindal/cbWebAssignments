@@ -9,4 +9,5 @@
 <li>Assignment 4 - <span>https://desiaddicts.netlify.app/</span></li>
 <li>Assignment 5 - <span>https://portfolio-developer.netlify.app/</span></li>
 <li>Assignment 6 - <span>https://todo-check.netlify.app/</span></li>
+  <li>Assignment 7 - <span>https://my-weather-report.netlify.app/</span></li>
 </ul>
